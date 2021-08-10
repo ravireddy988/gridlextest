@@ -1,0 +1,481 @@
+@import "mixins";
+@import "variable";
+@font-face {
+    font-family: poppines-bold;
+    src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: poppines-m;
+    src: url("../fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: poppines-r;
+    src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: poppines-l;
+    src: url("../fonts/poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: poppines-el;
+    src: url("../fonts/poppins/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: poppines-sb;
+    src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: opensans-r;
+    src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.abt-head {
+    text-align: center;
+    font-size: 40px;
+    font-family: poppines-m;
+    padding: 2% 0%;
+    @include xsm {
+        font-size: 28px;
+    }
+    @include sm {
+        font-size: 28px;
+    }
+    @include md {
+        font-size: 28px;
+    }
+}
+
+.home-content {
+    width: 100%;
+    height: 80vh;
+    background-image: url("./../images/Banner\ 1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include xsm {
+        height: 60vh;
+    }
+    @include sm {
+        height: 60vh;
+    }
+    @include md {
+        height: 60vh;
+    }
+    .home-u {
+        font-size: 18px;
+        font-family: poppines-bold;
+        color: #000 !important;
+        &.active {
+            background-color: rgb(21, 113, 175);
+            color: #fff !important;
+        }
+    }
+    .home-us {
+        &.active {
+            // background-color: rgb(21, 113, 175);
+            color: #fff !important;
+        }
+    }
+    .quick-head {
+        font-size: 32px;
+        color: rgb(97, 95, 95);
+        padding-left: 50px;
+        letter-spacing: 1px;
+        padding-top: 120px;
+        font-family: poppines-m;
+    }
+    .your-head {
+        padding-left: 50px;
+        font-size: 38px;
+        color: rgb(12, 3, 32);
+        .sucs-h {
+            color: rgb(10, 162, 233);
+        }
+    }
+    .your-head1 {
+        padding-left: 50px;
+        font-size: 40px;
+        font-family: poppines-r;
+        color: midnightblue;
+        .moto-h {
+            font-size: 50px;
+            color: midnightblue;
+            font-family: poppines-m;
+        }
+    }
+    .btn {
+        border: 1px solid midnightblue;
+        font-family: poppines-r;
+        background-color: midnightblue;
+        color: #fff;
+        font-size: 16px;
+        width: 90px;
+        height: 30px;
+        padding: 0px;
+        margin-left: 50px;
+    }
+}
+
+.reserching {
+    width: 100%;
+    padding: 4% 0%;
+    .rese-head {
+        text-align: center;
+        font-family: poppines-m;
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+    .per-num {
+        font-size: 50px;
+        position: absolute;
+        top: 98px;
+        left: 42%;
+        @include xsm {
+            font-size: 34px;
+            position: absolute;
+            top: 61px;
+            left: 42%;
+        }
+        @include sm {
+            font-size: 34px;
+            position: absolute;
+            top: 61px;
+            left: 42%;
+        }
+        @include md {
+            font-size: 34px;
+            position: absolute;
+            top: 61px;
+            left: 42%;
+        }
+    }
+    .circle-img {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        @include xsm {
+            margin-bottom: 18px;
+        }
+        @include sm {
+            margin-bottom: 18px;
+        }
+        @include md {
+            margin-bottom: 18px;
+        }
+    }
+}
+
+// ====================
+.box {
+    // width: 100%;
+    height: 60vh;
+    background-image: url("./../images/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border: 25px solid rgb(167, 212, 195);
+    width: 60%;
+    @include xsm {
+        width: 80%;
+    }
+    @include sm {
+        width: 80%;
+    }
+    @include md {
+        width: 80%;
+    }
+    .who-we-head {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 25%;
+        padding-top: 15px;
+        @include xsm {
+            padding-left: 0%;
+            font-size: 24px;
+        }
+        @include sm {
+            padding-left: 0%;
+            font-size: 24px;
+        }
+        @include md {
+            padding-left: 0%;
+            font-size: 24px;
+        }
+    }
+    .content {
+        padding-left: 38%;
+        @include xsm {
+            padding-left: 10%;
+        }
+        @include sm {
+            padding-left: 10%;
+        }
+        @include md {
+            padding-left: 10%;
+        }
+        .we-do-head {
+            font-size: 22px;
+            margin-bottom: 0px;
+            padding-top: 15px;
+        }
+        .dolor-para {
+            font-size: 16px;
+            padding-top: 15px;
+            padding-right: 14%;
+            @include xsm {
+                font-size: 13px;
+                padding-right: 5%;
+            }
+            @include sm {
+                font-size: 13px;
+                padding-right: 5%;
+            }
+            @include md {
+                font-size: 13px;
+                padding-right: 5%;
+            }
+        }
+    }
+    .research-head {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-top: 15px;
+        padding-left: 27%;
+        @include xsm {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 0px;
+            padding-top: 15px;
+            padding-left: 0%;
+        }
+        @include sm {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 0px;
+            padding-top: 15px;
+            padding-left: 0%;
+        }
+        @include md {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 0px;
+            padding-top: 15px;
+            padding-left: 0%;
+        }
+    }
+    .content1 {
+        padding-left: 52%;
+        @include xsm {
+            padding-left: 30%;
+        }
+        @include sm {
+            padding-left: 10%;
+        }
+        @include md {
+            padding-left: 10%;
+        }
+        .dolor-para {
+            font-size: 16px;
+            padding-top: 15px;
+            padding-right: 10%;
+            @include xsm {
+                font-size: 13px;
+                padding-right: 5%;
+            }
+            @include sm {
+                font-size: 13px;
+                padding-right: 5%;
+            }
+            @include md {
+                font-size: 13px;
+                padding-right: 5%;
+            }
+        }
+    }
+}
+
+// =================
+.footer-bc {
+    padding: 2% 8%;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(24, 140, 218);
+    @include xsm {
+        padding: 2% 2%;
+    }
+    @include sm {
+        padding: 2% 2%;
+    }
+    @include md {
+        padding: 2% 2%;
+    }
+    .get-head {
+        text-align: center;
+        color: #fff;
+        font-size: 34px;
+        padding-bottom: 15px;
+    }
+    .sub-btn {
+        width: 120px;
+        color: rgb(235, 231, 231);
+        height: 35px;
+        border: none;
+        margin-left: 30%;
+        margin-top: 50px;
+        background-color: rgb(4, 7, 39);
+        @include xsm {
+            margin-left: 0%;
+            width: 66px;
+            font-size: 10px;
+            margin-top: 40px;
+        }
+        @include sm {
+            margin-left: 0%;
+            width: 66px;
+            font-size: 10px;
+            margin-top: 40px;
+        }
+        @include md {
+            margin-left: 0%;
+            width: 66px;
+            font-size: 10px;
+            margin-top: 40px;
+        }
+    }
+    .foot-mail {
+        color: #fff;
+        font-size: 18px;
+        padding-bottom: 10px;
+        @include xsm {
+            font-size: 9px;
+        }
+        @include sm {
+            font-size: 9px;
+        }
+        @include md {
+            font-size: 9px;
+        }
+    }
+    #myBtn {
+        // display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        right: 30px;
+        /* Place the button 30px from the right */
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        background-color: red;
+        /* Set a background color */
+        color: white;
+        /* Text color */
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        padding: 15px;
+        /* Some padding */
+        border-radius: 10px;
+        /* Rounded corners */
+        font-size: 18px;
+        /* Increase font size */
+    }
+    #myBtn:hover {
+        background-color: rgb(192, 37, 37);
+        /* Add a dark-grey background on hover */
+    }
+}
+
+.owl-prev {
+    position: absolute;
+    color: black;
+    top: 85px;
+    font-size: 102px;
+    z-index: 999;
+    left: 15%;
+    span {
+        font-size: 120px;
+        position: absolute;
+        // border: 2px solid #fff;
+        color: rgb(24, 140, 218);
+        margin-left: -30px;
+        margin-top: -6px;
+        border-radius: 100px;
+        &:hover {
+            color: #c48c0c !important;
+        }
+        @include xsm {
+            margin-left: -44px;
+            font-size: 55px;
+            margin-top: 104px;
+        }
+        @include sm {
+            margin-left: -44px;
+            margin-top: 104px;
+            font-size: 55px;
+        }
+        @include md {
+            margin-left: -44px;
+            font-size: 55px;
+            margin-top: 104px;
+        }
+    }
+}
+
+.owl-next {
+    position: absolute;
+    color: black;
+    top: 85px;
+    font-size: 102px;
+    z-index: 999;
+    left: 84%;
+    span {
+        font-size: 120px;
+        position: absolute;
+        // border: 2px solid #fff;
+        color: rgb(24, 140, 218);
+        margin-left: 0px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        margin-top: -6px;
+        &:hover {
+            color: #c48c0c !important;
+        }
+        @include xsm {
+            margin-left: 24px;
+            margin-top: 104px;
+            font-size: 55px;
+        }
+        @include sm {
+            margin-left: 24px;
+            font-size: 55px;
+            margin-top: 104px;
+        }
+        @include md {
+            margin-top: 104px;
+            margin-left: 24px;
+            font-size: 55px;
+        }
+    }
+}
